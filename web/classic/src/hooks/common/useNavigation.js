@@ -49,6 +49,12 @@ export const useNavigation = (t, docsLink, headerNavModules) => {
         itemKey: 'pricing',
         to: '/pricing',
       },
+      {
+        text: '算力广场',
+        itemKey: 'power',
+        isExternal: true,
+        externalLink: 'http://218.75.39.90:31081/',
+      },
       ...(docsLink
         ? [
             {

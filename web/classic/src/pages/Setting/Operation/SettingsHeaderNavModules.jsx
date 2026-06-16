@@ -179,6 +179,11 @@ export default function SettingsHeaderNavModules(props) {
       hasSubConfig: true, // 标识该模块有子配置
     },
     {
+      key: 'power',
+      title: t('算力广场'),
+      description: t('算力资源展示和管理'),
+    },
+    {
       key: 'docs',
       title: t('文档'),
       description: t('系统文档和帮助信息'),

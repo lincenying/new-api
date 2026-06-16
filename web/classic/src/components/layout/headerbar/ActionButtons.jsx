@@ -52,11 +52,11 @@ const ActionButtons = ({
 
       <ThemeToggle theme={theme} onThemeToggle={onThemeToggle} t={t} />
 
-      <LanguageSelector
+      {/* <LanguageSelector
         currentLang={currentLang}
         onLanguageChange={onLanguageChange}
         t={t}
-      />
+      /> */}
 
       <UserArea
         userState={userState}
