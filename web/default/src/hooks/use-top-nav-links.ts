@@ -78,6 +78,10 @@ export function useTopNavLinks(): TopNavLink[] {
     links.push({ title: t('Model Square'), href: '/pricing', requiresAuth })
   }
 
+  if (modules?.power !== false) {
+    links.push({ title: '算力广场', href: 'http://218.75.39.90:31081/', external: true })
+  }
+
   // Rankings
   const rankings = modules?.rankings
   if (rankings && typeof rankings === 'object' && rankings.enabled) {
