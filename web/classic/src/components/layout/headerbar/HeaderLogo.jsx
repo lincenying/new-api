@@ -58,8 +58,8 @@ const HeaderLogo = ({
             height={24}
           >
             <Typography.Title
-              heading={4}
-              className='!text-lg !font-semibold !mb-0'
+              heading={2}
+              className='!text-2xl !font-semibold !mb-0'
             >
               {systemName}
             </Typography.Title>

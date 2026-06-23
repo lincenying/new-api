@@ -156,7 +156,7 @@ const PageLayout = () => {
     >
       <Header
         style={{
-          padding: 0,
+          padding: '0 20px',
           height: 'auto',
           lineHeight: 'normal',
           position: 'fixed',
