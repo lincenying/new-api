@@ -173,15 +173,25 @@ export default function SettingsHeaderNavModules(props) {
       description: t('用户控制面板，管理账户'),
     },
     {
+      key: 'power',
+      title: t('算力广场'),
+      description: t('算力资源展示和管理'),
+    },
+    {
+      key: 'tkcann',
+      title: t('TK_CANN'),
+      description: t('TK_CANN资源展示和管理'),
+    },
+    {
       key: 'pricing',
       title: t('模型广场'),
       description: t('模型定价，需要登录访问'),
       hasSubConfig: true, // 标识该模块有子配置
     },
     {
-      key: 'power',
-      title: t('算力广场'),
-      description: t('算力资源展示和管理'),
+      key: 'app',
+      title: t('应用广场'),
+      description: t('应用资源展示和管理'),
     },
     {
       key: 'docs',

@@ -17,16 +17,17 @@ export default defineConfig(({ envMode }) => {
     process.env.VITE_REACT_APP_SERVER_URL ||
     env.rawPublicVars.VITE_REACT_APP_SERVER_URL ||
     ''
+    console.log(clientServerUrl);
   const proxyServerUrl =
     clientServerUrl ||
-    'http://localhost:3000'
+    'http://61.241.77.10:3000'
   const isProd = envMode === 'production'
   const devProxy = Object.fromEntries(
-    (['/api', '/mj', '/pg'] as const).map((key) => [
+    (['/api', '/mj', '/pg']).map((key) => [
       key,
       { target: proxyServerUrl, changeOrigin: true },
     ]),
-  ) as Record<string, { target: string; changeOrigin: boolean }>
+  )
 
   return {
     plugins: [pluginReact()],

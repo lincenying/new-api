@@ -46,15 +46,27 @@ export const useNavigation = (t, docsLink, headerNavModules) => {
         to: '/console',
       },
       {
+        text: '算力广场',
+        itemKey: 'power',
+        isExternal: true,
+        externalLink: 'http://218.75.39.90:31081/',
+      },
+      {
+        text: t('TK_CANN'),
+        itemKey: 'tkcann',
+        isExternal: true,
+        externalLink: 'http://61.241.77.10:8082/',
+      },
+      {
         text: t('模型广场'),
         itemKey: 'pricing',
         to: '/pricing',
       },
       {
-        text: '算力广场',
-        itemKey: 'power',
+        text: t('应用广场'),
+        itemKey: 'app',
         isExternal: true,
-        externalLink: 'http://218.75.39.90:31081/',
+        externalLink: 'http://61.241.77.10:8081/',
       },
       ...(docsLink
         ? [

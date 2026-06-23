@@ -162,7 +162,7 @@ const Home = () => {
             {/* 背景模糊晕染球 */}
             <div className='blur-ball blur-ball-indigo' />
             <div className='blur-ball blur-ball-teal' />
-            <div className='flex items-center justify-center px-4 pt-24 pb-8'>
+            <div className='flex items-center justify-center px-4 pt-48 pb-8'>
               {/* 居中内容区 */}
               <div className='flex flex-col items-center justify-center text-center max-w-4xl mx-auto'>
                 <div className='flex flex-col items-center justify-center mb-6 md:mb-8'>
@@ -172,14 +172,14 @@ const Home = () => {
                     <>
                       {t('统一的')}
                       <br />
-                      <span className='shine-text'>{t('大模型接口网关')}</span>
+                      <span className='shine-text'>{t('AI产业运营平台')}</span>
                     </>
                   </h1>
                   <p className='text-base md:text-lg lg:text-xl text-semi-color-text-1 mt-4 md:mt-6 max-w-xl'>
-                    {t('多模型统一接入，只需将基址替换为：')}
+                    {t('让硅基生命更好的服务碳基生命：')}
                   </p>
                   {/* BASE URL 与端点选择 */}
-                  <div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full mt-4 md:mt-6 max-w-md'>
+                  {/* <div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full mt-4 md:mt-6 max-w-md'>
                     <Input
                       readonly
                       value={serverAddress}
@@ -208,7 +208,7 @@ const Home = () => {
                         </div>
                       }
                     />
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* 操作按钮 */}
@@ -221,10 +221,10 @@ const Home = () => {
                       className='!rounded-3xl px-8 py-2'
                       icon={<IconPlay />}
                     >
-                      {t('获取密钥')}
+                      {t('获取服务')}
                     </Button>
                   </Link>
-                  {isDemoSiteMode && statusState?.status?.version ? (
+                  {/* {isDemoSiteMode && statusState?.status?.version ? (
                     <Button
                       size={isMobile ? 'default' : 'large'}
                       className='flex items-center !rounded-3xl px-6 py-2'
@@ -249,7 +249,7 @@ const Home = () => {
                         {t('文档')}
                       </Button>
                     )
-                  )}
+                  )} */}
                 </div>
 
                 {/* 框架兼容性图标 */}
