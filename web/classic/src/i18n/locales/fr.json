@@ -2107,7 +2107,7 @@
     "模型定价，需要登录访问": "Tarification du modèle, nécessite une connexion pour y accéder",
     "模型定价设置": "Model Pricing",
     "模型广场": "Marché des modèles",
-    "算力广场": "算力广场",
+    "算力广场": "智能计算服务平台",
     "TK_CANN": "TK_CANN",
     "应用广场": "应用广场",
     "模型拉取失败: {{error}}": "Failed to pull model: {{error}}",

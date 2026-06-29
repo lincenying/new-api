@@ -177,7 +177,7 @@ export function HeaderNavigationSection({
     },
     {
       key: 'power',
-      title: '算力广场',
+      title: t('Power'),
       description: '算力资源展示和管理',
     },
   ]

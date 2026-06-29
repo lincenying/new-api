@@ -46,7 +46,7 @@ export const useNavigation = (t, docsLink, headerNavModules) => {
         to: '/console',
       },
       {
-        text: '算力广场',
+        text: t('算力广场'),
         itemKey: 'power',
         isExternal: true,
         externalLink: 'http://218.75.39.90:31081/',

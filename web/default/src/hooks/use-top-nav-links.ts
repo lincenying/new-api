@@ -79,7 +79,7 @@ export function useTopNavLinks(): TopNavLink[] {
   }
 
   if (modules?.power !== false) {
-    links.push({ title: '算力广场', href: 'http://218.75.39.90:31081/', external: true })
+    links.push({ title: t('Power'), href: 'http://218.75.39.90:31081/', external: true })
   }
 
   // Rankings
