@@ -71,6 +71,16 @@ export function useTopNavLinks(): TopNavLink[] {
     links.push({ title: t('Console'), href: '/dashboard' })
   }
 
+  // 算力广场
+  if (modules?.power !== false) {
+    links.push({ title: t('Power'), href: 'http://218.75.39.90:31081/', external: true })
+  }
+
+  // tk_cann
+  if (modules?.tkcann !== false) {
+    links.push({ title: t('TK_CANN'), href: 'http://61.241.77.10:8082/', external: true })
+  }
+
   // Pricing
   const pricing = modules?.pricing
   if (pricing && typeof pricing === 'object' && pricing.enabled) {
@@ -78,8 +88,9 @@ export function useTopNavLinks(): TopNavLink[] {
     links.push({ title: t('Model Square'), href: '/pricing', requiresAuth })
   }
 
-  if (modules?.power !== false) {
-    links.push({ title: t('Power'), href: 'http://218.75.39.90:31081/', external: true })
+  // tk_cann
+  if (modules?.app !== false) {
+    links.push({ title: t('App Square'), href: 'http://61.241.77.10:8081/', external: true })
   }
 
   // Rankings
